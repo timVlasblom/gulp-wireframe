@@ -1,0 +1,36 @@
+.contact{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	background-color: $yellow;
+	flex-wrap: wrap;
+	text-align: center;
+
+	h2{
+		text-align: center;
+		width: 100%;
+	}
+	.contactform{
+		width: 60%;
+		margin-left: 20%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.contact_input{
+			display: flex;
+			justify-content: space-between;
+			height: 1.5em;
+			width: 100%;
+			input{
+				width: 45%;
+			}
+		}
+		textarea{
+			width: 100%;
+			height: 8em;
+		}
+		button{
+			height: 30px;
+		}
+	}
+}
