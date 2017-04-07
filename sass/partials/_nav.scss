@@ -1,15 +1,17 @@
-.main_nav{
+.mainNav{
 	display: flex;
 	width: 100%;
 	background-color: $pink;
-	.main_nav_ul{
+
+	&__ul{
 		display: flex;
 		width: 100vw;
 		flex-direction: row;
 		list-style: none;
 		justify-content: center;
-		.main_nav_li{
-			padding: 10px;
-		}
+	}
+
+	&__li{
+		padding: 10px;
 	}
 }

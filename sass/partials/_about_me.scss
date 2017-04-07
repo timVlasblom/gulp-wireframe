@@ -1,84 +1,76 @@
-.about_me{
+.aboutMe{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
-	.my_bio{
+
+	&__bio{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 50%;
 		height: 40vh;
 		background-color: $yellow;
-		.circle {
-			align-self: center;
-			width: 60px;
-			height: 60px;
-			background: $lime;
-			-webkit-border-radius: 30px;
-		}
-		.my_bio_text{
-			padding-top: 10%;
-			align-self: center;
-		}
+	}
+	&__circle {
+		align-self: center;
+		width: 60px;
+		height: 60px;
+		background: $lime;
+		-webkit-border-radius: 30px;
+	}
+	&__text{
+		padding-top: 10%;
+		align-self: center;
 	}
 
-	.intro{
+	&__intro{
 		width: 50%;
 		height: 40vh;
 		text-align: center;
 		background-color: $pink;
-		.intro_text{
-
-		}
 	}
 
-	.experience{
+	&__experience{
 		width: 50%;
 		height: 40vh;
 		text-align: center;
 		background-color: $pink;
-		.experience_text{
-
-		}
-		.experience_button{
-		}
 	}
 
-	.skills{
+	&__skills{
 		width: 50%;
 		height: 40vh;
 		background-color: $purple;
 		text-align: center;
-		.skillbar{
+		&__skillbar{
 			width: 80%;
 			height: 15px;
 			margin: 3% 10%;
 			background-color: $light-grey;
-			.fullbar{
-				background-color: $yellow;
-				height: 15px;
+			&--barOne{
+				@extend .fullbar;
+				width: random(100) + %;
+			}
+			&--barTwo{
+				@extend .fullbar;
+				width: random(100) + %;
+			}
+			&--barThree{
+				@extend .fullbar;
+				width: random(100) + %;
+			}
+			&--barFour{
+				@extend .fullbar;
+				width: random(100) + %;
+			}
+			&--barFive{
+				@extend .fullbar;
+				width: random(100) + %;
 			}
 		}
-		.bar_one{
-			@extend .fullbar;
-			width: random(100) + %;
-		}
-		.bar_two{
-			@extend .fullbar;
-			width: random(100) + %;
-		}
-		.bar_three{
-			@extend .fullbar;
-			width: random(100) + %;
-		}
-		.bar_four{
-			@extend .fullbar;
-			width: random(100) + %;
-		}
-		.bar_five{
-			@extend .fullbar;
-			width: random(100) + %;
+		.fullbar{
+			background-color: $yellow;
+			height: 15px;
 		}
 	}
 }

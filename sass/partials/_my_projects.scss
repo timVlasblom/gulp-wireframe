@@ -1,28 +1,28 @@
-.my_projects{
+.myProjects{
 	display: flex;
 	width: 100%;
 	height: 90vh;
-	.project{
+	&__project{
 		width: 75%;
 		background-color: $lime;
-		.project_image{
+		&__projectImage{
 			width: 75%;
 			height: 75%;
 			margin: 7.5% 0  0 12.5%;
 		}
 	}
-	.other_projects{
+	&__otherProjects{
 		display: flex;
 		justify-content: space-around;
 		text-align: center;
 		flex-wrap: wrap;
 		width: 25%;
 		background-color: $maroon;
-		.other_projects_image{
+		&__otherProjectsImage{
 			width: 40%;
 			height: 20%;
 		}
-		.projects_text{
+		&__projectsText{
 			width: 100%;
 			display: block;
 			span{
@@ -31,7 +31,7 @@
 				font-size: 0.7em;
 			}
 		}
-		.line{
+		&__line{
 			width: 80%;
 			height: 2px;
 			background-color: $white;

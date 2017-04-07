@@ -10,13 +10,13 @@
 		text-align: center;
 		width: 100%;
 	}
-	.contactform{
+	&__form{
 		width: 60%;
 		margin-left: 20%;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		.contact_input{
+		&__input{
 			display: flex;
 			justify-content: space-between;
 			height: 1.5em;

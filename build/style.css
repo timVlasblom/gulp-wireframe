@@ -387,18 +387,18 @@ h2 {
   font-size: 50px;
   color: #ffffff; }
 
-.main_nav {
+.mainNav {
   display: flex;
   width: 100%;
   background-color: #F58092; }
-  .main_nav .main_nav_ul {
+  .mainNav__ul {
     display: flex;
     width: 100vw;
     flex-direction: row;
     list-style: none;
     justify-content: center; }
-    .main_nav .main_nav_ul .main_nav_li {
-      padding: 10px; }
+  .mainNav__li {
+    padding: 10px; }
 
 .banner {
   display: flex;
@@ -407,7 +407,7 @@ h2 {
   width: 100%;
   height: 70vh;
   background-color: #8d3239; }
-  .banner .circle {
+  .banner__circle {
     margin-top: 20%;
     align-self: center;
     width: 40px;
@@ -415,89 +415,89 @@ h2 {
     background: #32cd32;
     -webkit-border-radius: 30px; }
 
-.about_me {
+.aboutMe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-  .about_me .my_bio {
+  .aboutMe__bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
     height: 40vh;
     background-color: #fff000; }
-    .about_me .my_bio .circle {
-      align-self: center;
-      width: 60px;
-      height: 60px;
-      background: #32cd32;
-      -webkit-border-radius: 30px; }
-    .about_me .my_bio .my_bio_text {
-      padding-top: 10%;
-      align-self: center; }
-  .about_me .intro {
+  .aboutMe__circle {
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    background: #32cd32;
+    -webkit-border-radius: 30px; }
+  .aboutMe__text {
+    padding-top: 10%;
+    align-self: center; }
+  .aboutMe__intro {
     width: 50%;
     height: 40vh;
     text-align: center;
     background-color: #F58092; }
-  .about_me .experience {
+  .aboutMe__experience {
     width: 50%;
     height: 40vh;
     text-align: center;
     background-color: #F58092; }
-  .about_me .skills {
+  .aboutMe__skills {
     width: 50%;
     height: 40vh;
     background-color: #754353;
     text-align: center; }
-    .about_me .skills .skillbar {
+    .aboutMe__skills__skillbar {
       width: 80%;
       height: 15px;
       margin: 3% 10%;
       background-color: #d3d3d3; }
-      .about_me .skills .skillbar .fullbar, .about_me .skills .skillbar .bar_one, .about_me .skills .skillbar .bar_two, .about_me .skills .skillbar .bar_three, .about_me .skills .skillbar .bar_four, .about_me .skills .skillbar .bar_five {
-        background-color: #fff000;
-        height: 15px; }
-    .about_me .skills .bar_one {
-      width: 56%; }
-    .about_me .skills .bar_two {
-      width: 57%; }
-    .about_me .skills .bar_three {
-      width: 79%; }
-    .about_me .skills .bar_four {
-      width: 34%; }
-    .about_me .skills .bar_five {
-      width: 50%; }
+      .aboutMe__skills__skillbar--barOne {
+        width: 51%; }
+      .aboutMe__skills__skillbar--barTwo {
+        width: 67%; }
+      .aboutMe__skills__skillbar--barThree {
+        width: 50%; }
+      .aboutMe__skills__skillbar--barFour {
+        width: 25%; }
+      .aboutMe__skills__skillbar--barFive {
+        width: 29%; }
+    .aboutMe__skills .fullbar, .aboutMe__skills .aboutMe__skills__skillbar--barOne, .aboutMe__skills .aboutMe__skills__skillbar--barTwo, .aboutMe__skills .aboutMe__skills__skillbar--barThree, .aboutMe__skills .aboutMe__skills__skillbar--barFour, .aboutMe__skills .aboutMe__skills__skillbar--barFive {
+      background-color: #fff000;
+      height: 15px; }
 
-.my_projects {
+.myProjects {
   display: flex;
   width: 100%;
   height: 90vh; }
-  .my_projects .project {
+  .myProjects__project {
     width: 75%;
     background-color: #32cd32; }
-    .my_projects .project .project_image {
+    .myProjects__project__projectImage {
       width: 75%;
       height: 75%;
       margin: 7.5% 0  0 12.5%; }
-  .my_projects .other_projects {
+  .myProjects__otherProjects {
     display: flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
     width: 25%;
     background-color: #8d3239; }
-    .my_projects .other_projects .other_projects_image {
+    .myProjects__otherProjects__otherProjectsImage {
       width: 40%;
       height: 20%; }
-    .my_projects .other_projects .projects_text {
+    .myProjects__otherProjects__projectsText {
       width: 100%;
       display: block; }
-      .my_projects .other_projects .projects_text span {
+      .myProjects__otherProjects__projectsText span {
         display: block;
         width: 100%;
         font-size: 0.7em; }
-    .my_projects .other_projects .line {
+    .myProjects__otherProjects__line {
       width: 80%;
       height: 2px;
       background-color: #ffffff; }
@@ -512,23 +512,23 @@ h2 {
   .contact h2 {
     text-align: center;
     width: 100%; }
-  .contact .contactform {
+  .contact__form {
     width: 60%;
     margin-left: 20%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-    .contact .contactform .contact_input {
+    .contact__form__input {
       display: flex;
       justify-content: space-between;
       height: 1.5em;
       width: 100%; }
-      .contact .contactform .contact_input input {
+      .contact__form__input input {
         width: 45%; }
-    .contact .contactform textarea {
+    .contact__form textarea {
       width: 100%;
       height: 8em; }
-    .contact .contactform button {
+    .contact__form button {
       height: 30px; }
 
 footer {
